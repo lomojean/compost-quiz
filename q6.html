@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Test our compost knowledge</h1>
+      <p>Check your understanding of where your trash goes.</p>
+    </header>
+    <div class="question">
+      <h3>Can this item go into the compost?</h3>
+      <!-- ADD YOUR OWN IMAGE HERE-->
+      <img
+        src="https://cdn.glitch.global/5c540733-833e-43ed-9356-b2ec579a4a40/apple.png?v=1714595063420"
+        height="300"
+      />
+
+      <!-- Each Yes or No Answer should either increment or decrement the points from the quiz. Change the function based on the answer. -->
+      <a href="results.html" onclick="incToo();" class="yes-button">👍</a>
+      <a href="results.html" onclick="decToo()" class="no-button">👎</a>
+    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px"
+    ></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <footer>
+      <button onclick="goBack()">⬅️ go back</button>
+    </footer>
+  </body>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</html>
